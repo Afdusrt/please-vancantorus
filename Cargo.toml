@@ -1,0 +1,13 @@
+[package]
+name = "please vancantorus"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+device_query = "4.0.1"
+raylib = "5.5.1"
+rfd = "0.17.2"
+windows = "0.62.2"
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.62.2", features = ["Win32", "Win32_UI", "Win32_UI_WindowsAndMessaging"] }
